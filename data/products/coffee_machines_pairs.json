@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "category": "coffee_machines",
+  "currency": "USD",
+  "notes": "Matched 2AFC product pairs for the second product category (coffee machines). Same design as headphones: base_price, rating, and rating_count are identical within a pair; descriptions are neutral (category + specs only, no price/rating/persuasion) and length-matched; specs are identical within a pair. Cues are applied at runtime, not baked in. Base prices span a range distinct from headphones so cue premia can be examined against a different absolute price level.",
+  "pairs": [
+    {
+      "pair_id": "drip_12cup_01",
+      "subcategory": "programmable drip coffee maker",
+      "base_price": 49.99,
+      "rating": 4.3,
+      "rating_count": 5200,
+      "product_a": {
+        "id": "brewline_dc12",
+        "name": "BrewLine DC-12",
+        "brand": "BrewLine",
+        "neutral_description": "Programmable drip coffee maker with a twelve-cup glass carafe. Includes a reusable mesh filter, a keep-warm hotplate, and a twenty-four-hour delay-start timer. Has a water-level window and auto-shutoff after two hours. The filter basket is removable for cleaning.",
+        "specs": {"type": "drip", "carafe_cups": 12, "carafe": "glass", "programmable": true, "reusable_filter": true, "keep_warm": true, "auto_shutoff_hours": 2}
+      },
+      "product_b": {
+        "id": "kettra_morning12",
+        "name": "Kettra Morning 12",
+        "brand": "Kettra",
+        "neutral_description": "Programmable drip coffee brewer with a twelve-cup glass carafe. Offers a reusable mesh filter, a warming hotplate, and a twenty-four-hour delayed-start timer. Has a water-level window and auto-shutoff after two hours. The brew basket is removable for cleaning.",
+        "specs": {"type": "drip", "carafe_cups": 12, "carafe": "glass", "programmable": true, "reusable_filter": true, "keep_warm": true, "auto_shutoff_hours": 2}
+      }
+    },
+    {
+      "pair_id": "pod_single_01",
+      "subcategory": "single-serve pod machine",
+      "base_price": 89.99,
+      "rating": 4.5,
+      "rating_count": 8100,
+      "product_a": {
+        "id": "unopod_one",
+        "name": "UnoPod One",
+        "brand": "UnoPod",
+        "neutral_description": "Single-serve pod coffee machine compatible with standard capsules. Offers three cup sizes, a removable water reservoir, and a used-capsule bin. Reaches brewing temperature in under a minute and switches off automatically when idle. A drip tray fits taller mugs.",
+        "specs": {"type": "pod", "cup_sizes": 3, "reservoir_removable": true, "capsule_bin": true, "quick_heat": true, "auto_off": true}
+      },
+      "product_b": {
+        "id": "capsa_solo",
+        "name": "Capsa Solo",
+        "brand": "Capsa",
+        "neutral_description": "Single-serve capsule coffee machine that accepts standard pods. Provides three cup sizes, a removable water tank, and a spent-capsule container. Heats to brewing temperature in under a minute and powers off automatically when idle. A drip tray adjusts for taller mugs.",
+        "specs": {"type": "pod", "cup_sizes": 3, "reservoir_removable": true, "capsule_bin": true, "quick_heat": true, "auto_off": true}
+      }
+    },
+    {
+      "pair_id": "espresso_pump_01",
+      "subcategory": "pump espresso machine",
+      "base_price": 179.99,
+      "rating": 4.2,
+      "rating_count": 3300,
+      "product_a": {
+        "id": "cremio_e15",
+        "name": "Cremio E15",
+        "brand": "Cremio",
+        "neutral_description": "Pump espresso machine with a fifteen-bar pump and a stainless-steel boiler. Includes a steam wand for milk frothing, a portafilter with single and double baskets, and a removable drip tray. The water tank detaches from the rear for refilling.",
+        "specs": {"type": "espresso", "pump_bar": 15, "boiler": "stainless steel", "steam_wand": true, "portafilter": true, "reservoir_removable": true}
+      },
+      "product_b": {
+        "id": "barista_p15",
+        "name": "Barista P15",
+        "brand": "Barista Lab",
+        "neutral_description": "Pump espresso maker with a fifteen-bar pump and a stainless-steel boiler. Provides a steam wand for frothing milk, a portafilter with single and double baskets, and a removable drip tray. The water tank detaches at the rear for refilling.",
+        "specs": {"type": "espresso", "pump_bar": 15, "boiler": "stainless steel", "steam_wand": true, "portafilter": true, "reservoir_removable": true}
+      }
+    },
+    {
+      "pair_id": "espresso_auto_01",
+      "subcategory": "automatic bean-to-cup machine",
+      "base_price": 299.99,
+      "rating": 4.6,
+      "rating_count": 2100,
+      "product_a": {
+        "id": "aromatic_auto",
+        "name": "Aromatic Auto",
+        "brand": "Aromatic",
+        "neutral_description": "Automatic bean-to-cup machine with an integrated conical burr grinder. Grinds beans per cup, offers adjustable strength and cup-size settings, and includes a steam wand. The brew unit and drip tray are removable, and the bean hopper seals to keep beans fresh.",
+        "specs": {"type": "bean_to_cup", "grinder": "conical burr", "adjustable_strength": true, "steam_wand": true, "removable_brew_unit": true}
+      },
+      "product_b": {
+        "id": "grindpro_bc",
+        "name": "GrindPro BC",
+        "brand": "GrindPro",
+        "neutral_description": "Automatic bean-to-cup machine with a built-in conical burr grinder. Grinds beans for each cup, provides adjustable strength and cup-size settings, and features a steam wand. The brew unit and drip tray detach, and the bean hopper seals to keep beans fresh.",
+        "specs": {"type": "bean_to_cup", "grinder": "conical burr", "adjustable_strength": true, "steam_wand": true, "removable_brew_unit": true}
+      }
+    },
+    {
+      "pair_id": "thermal_drip_01",
+      "subcategory": "thermal-carafe drip maker",
+      "base_price": 119.99,
+      "rating": 4.4,
+      "rating_count": 2700,
+      "product_a": {
+        "id": "summit_th10",
+        "name": "Summit TH-10",
+        "brand": "Summit",
+        "neutral_description": "Drip coffee maker with an insulated stainless-steel thermal carafe holding ten cups. Includes a programmable timer, a reusable filter, and a pause-and-serve valve. The showerhead distributes water evenly over the grounds, and the lid seals to retain heat.",
+        "specs": {"type": "drip", "carafe_cups": 10, "carafe": "thermal steel", "programmable": true, "reusable_filter": true, "pause_and_serve": true}
+      },
+      "product_b": {
+        "id": "northpeak_t10",
+        "name": "NorthPeak T10",
+        "brand": "NorthPeak",
+        "neutral_description": "Drip coffee brewer with an insulated stainless-steel thermal carafe holding ten cups. Provides a programmable timer, a reusable filter, and a pause-and-serve valve. The showerhead spreads water evenly across the grounds, and the lid seals to retain heat.",
+        "specs": {"type": "drip", "carafe_cups": 10, "carafe": "thermal steel", "programmable": true, "reusable_filter": true, "pause_and_serve": true}
+      }
+    },
+    {
+      "pair_id": "combo_pod_drip_01",
+      "subcategory": "combo pod and carafe machine",
+      "base_price": 149.99,
+      "rating": 4.1,
+      "rating_count": 1600,
+      "product_a": {
+        "id": "duobrew_cx",
+        "name": "DuoBrew CX",
+        "brand": "DuoBrew",
+        "neutral_description": "Combination machine that brews either a single pod cup or a full carafe. Has two separate brew paths, a shared removable reservoir, and a programmable timer for the carafe side. The pod side accepts standard capsules, and the drip tray is removable.",
+        "specs": {"type": "combo", "modes": 2, "carafe_cups": 12, "pod_compatible": true, "programmable": true, "reservoir_removable": true}
+      },
+      "product_b": {
+        "id": "twincup_dc",
+        "name": "TwinCup DC",
+        "brand": "TwinCup",
+        "neutral_description": "Combination machine that makes either a single pod cup or a full carafe. Offers two separate brew paths, a shared removable reservoir, and a programmable timer for the carafe side. The pod side takes standard capsules, and the drip tray is removable.",
+        "specs": {"type": "combo", "modes": 2, "carafe_cups": 12, "pod_compatible": true, "programmable": true, "reservoir_removable": true}
+      }
+    }
+  ]
+}

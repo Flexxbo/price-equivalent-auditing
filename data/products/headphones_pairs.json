@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "category": "headphones",
+  "currency": "USD",
+  "notes": "Matched 2AFC product pairs. Descriptions are intentionally neutral (see qc_self_audit). The social-proof sentence is NOT baked in here; it is applied at runtime by nudges.py so the same pair can serve nudge and control conditions. base_price, rating, and rating_count are identical within a pair so the nudge / price-gap are the only manipulated variables.",
+  "pairs": [
+    {
+      "pair_id": "over_ear_anc_01",
+      "subcategory": "over-ear wireless ANC",
+      "base_price": 129.99,
+      "rating": 4.4,
+      "rating_count": 4400,
+      "product_a": {
+        "id": "aeris_anc700",
+        "name": "Aeris ANC-700",
+        "brand": "Aeris",
+        "neutral_description": "Over-ear wireless headphones with active noise cancellation. Includes 40mm dynamic drivers, Bluetooth 5.3, and up to 30 hours of battery life on a single charge. Foldable design with a carrying case. Weight: 250 g. A 3.5mm cable is included for wired use.",
+        "specs": {"driver_mm": 40, "bluetooth": "5.3", "battery_hours": 30, "anc": true, "weight_g": 250, "foldable": true, "wired_option": true},
+        "image_standard": "images/aeris_anc700_standard.png",
+        "image_optimized": "images/aeris_anc700_optimized.png"
+      },
+      "product_b": {
+        "id": "voltic_studio_one",
+        "name": "Voltic Studio One",
+        "brand": "Voltic",
+        "neutral_description": "Wireless over-ear headphones featuring active noise cancellation. Equipped with 40mm dynamic drivers, Bluetooth 5.3, and a battery life of up to 30 hours per charge. Foldable build with an included carrying case. Weight: 250 g. A 3.5mm cable is provided for wired use.",
+        "specs": {"driver_mm": 40, "bluetooth": "5.3", "battery_hours": 30, "anc": true, "weight_g": 250, "foldable": true, "wired_option": true},
+        "image_standard": "images/voltic_studio_one_standard.png",
+        "image_optimized": "images/voltic_studio_one_optimized.png"
+      }
+    },
+    {
+      "pair_id": "in_ear_anc_01",
+      "subcategory": "in-ear wireless ANC",
+      "base_price": 89.99,
+      "rating": 4.3,
+      "rating_count": 2800,
+      "product_a": {
+        "id": "pulse_air",
+        "name": "Pulse Air Buds",
+        "brand": "Pulse",
+        "neutral_description": "In-ear wireless earbuds with active noise cancellation. Include 11mm drivers, Bluetooth 5.3, and up to 8 hours of battery life per charge, plus 24 hours from the charging case. Rated IPX4 for water resistance. Weight: 5 g per earbud. A USB-C charging cable is included.",
+        "specs": {"driver_mm": 11, "bluetooth": "5.3", "battery_hours": 8, "case_hours": 24, "anc": true, "weight_g": 5, "water_resistance": "IPX4", "wired_option": false},
+        "image_standard": "images/pulse_air_standard.png",
+        "image_optimized": "images/pulse_air_optimized.png"
+      },
+      "product_b": {
+        "id": "nimbus_tone_x",
+        "name": "Nimbus Tone X",
+        "brand": "Nimbus",
+        "neutral_description": "Wireless in-ear earbuds with active noise cancellation. Feature 11mm drivers, Bluetooth 5.3, and up to 8 hours of battery life per charge, with an additional 24 hours from the charging case. Rated IPX4 for water resistance. Weight: 5 g per earbud. A USB-C charging cable is provided.",
+        "specs": {"driver_mm": 11, "bluetooth": "5.3", "battery_hours": 8, "case_hours": 24, "anc": true, "weight_g": 5, "water_resistance": "IPX4", "wired_option": false},
+        "image_standard": "images/nimbus_tone_x_standard.png",
+        "image_optimized": "images/nimbus_tone_x_optimized.png"
+      }
+    },
+    {
+      "pair_id": "on_ear_01",
+      "subcategory": "on-ear wireless",
+      "base_price": 79.99,
+      "rating": 4.2,
+      "rating_count": 3100,
+      "product_a": {
+        "id": "cobalt_on200",
+        "name": "Cobalt On-Ear 200",
+        "brand": "Cobalt",
+        "neutral_description": "On-ear wireless headphones with 36mm dynamic drivers and Bluetooth 5.2. Provide up to 24 hours of battery life per charge. Foldable design with a soft carrying pouch. Weight: 180 g. A 3.5mm cable is included for wired use.",
+        "specs": {"driver_mm": 36, "bluetooth": "5.2", "battery_hours": 24, "anc": false, "weight_g": 180, "foldable": true, "wired_option": true},
+        "image_standard": "images/cobalt_on200_standard.png",
+        "image_optimized": "images/cobalt_on200_optimized.png"
+      },
+      "product_b": {
+        "id": "wren_o2",
+        "name": "Wren Audio O2",
+        "brand": "Wren",
+        "neutral_description": "Wireless on-ear headphones featuring 36mm dynamic drivers and Bluetooth 5.2. Offer up to 24 hours of battery life per charge. Foldable build with a soft carrying pouch. Weight: 180 g. A 3.5mm cable is provided for wired use.",
+        "specs": {"driver_mm": 36, "bluetooth": "5.2", "battery_hours": 24, "anc": false, "weight_g": 180, "foldable": true, "wired_option": true},
+        "image_standard": "images/wren_o2_standard.png",
+        "image_optimized": "images/wren_o2_optimized.png"
+      }
+    },
+    {
+      "pair_id": "tws_sport_01",
+      "subcategory": "true-wireless sport earbuds",
+      "base_price": 59.99,
+      "rating": 4.1,
+      "rating_count": 5200,
+      "product_a": {
+        "id": "stride_active",
+        "name": "Stride Active TW",
+        "brand": "Stride",
+        "neutral_description": "In-ear true-wireless earbuds with 10mm drivers and Bluetooth 5.3. Provide up to 7 hours of battery life per charge, plus 28 hours from the charging case. Rated IPX5 for water resistance. Weight: 5 g per earbud. A USB-C charging cable is included.",
+        "specs": {"driver_mm": 10, "bluetooth": "5.3", "battery_hours": 7, "case_hours": 28, "anc": false, "weight_g": 5, "water_resistance": "IPX5", "wired_option": false},
+        "image_standard": "images/stride_active_standard.png",
+        "image_optimized": "images/stride_active_optimized.png"
+      },
+      "product_b": {
+        "id": "kinetic_move",
+        "name": "Kinetic Move Buds",
+        "brand": "Kinetic",
+        "neutral_description": "True-wireless in-ear earbuds featuring 10mm drivers and Bluetooth 5.3. Offer up to 7 hours of battery life per charge, with an additional 28 hours from the charging case. Rated IPX5 for water resistance. Weight: 5 g per earbud. A USB-C charging cable is provided.",
+        "specs": {"driver_mm": 10, "bluetooth": "5.3", "battery_hours": 7, "case_hours": 28, "anc": false, "weight_g": 5, "water_resistance": "IPX5", "wired_option": false},
+        "image_standard": "images/kinetic_move_standard.png",
+        "image_optimized": "images/kinetic_move_optimized.png"
+      }
+    },
+    {
+      "pair_id": "wired_studio_01",
+      "subcategory": "wired over-ear studio",
+      "base_price": 149.99,
+      "rating": 4.5,
+      "rating_count": 1800,
+      "product_a": {
+        "id": "montir_studio90",
+        "name": "Montir Studio 90",
+        "brand": "Montir",
+        "neutral_description": "Over-ear wired studio headphones with 45mm dynamic drivers and a closed-back design. Impedance is 32 ohms. Include a detachable cable and a 6.35mm adapter. Weight: 290 g. Intended for monitoring and general listening.",
+        "specs": {"driver_mm": 45, "impedance_ohm": 32, "closed_back": true, "anc": false, "weight_g": 290, "detachable_cable": true, "wired_option": true},
+        "image_standard": "images/montir_studio90_standard.png",
+        "image_optimized": "images/montir_studio90_optimized.png"
+      },
+      "product_b": {
+        "id": "larkin_sr9",
+        "name": "Larkin SR-9",
+        "brand": "Larkin",
+        "neutral_description": "Wired over-ear studio headphones featuring 45mm dynamic drivers and a closed-back design. Impedance is 32 ohms. Come with a detachable cable and a 6.35mm adapter. Weight: 290 g. Suitable for monitoring and general listening.",
+        "specs": {"driver_mm": 45, "impedance_ohm": 32, "closed_back": true, "anc": false, "weight_g": 290, "detachable_cable": true, "wired_option": true},
+        "image_standard": "images/larkin_sr9_standard.png",
+        "image_optimized": "images/larkin_sr9_optimized.png"
+      }
+    },
+    {
+      "pair_id": "over_ear_premium_01",
+      "subcategory": "over-ear wireless ANC",
+      "base_price": 199.99,
+      "rating": 4.6,
+      "rating_count": 2400,
+      "product_a": {
+        "id": "halcyon_apex9",
+        "name": "Halcyon Apex 9",
+        "brand": "Halcyon",
+        "neutral_description": "Over-ear wireless headphones with active noise cancellation. Include 40mm dynamic drivers, Bluetooth 5.3, and up to 40 hours of battery life on a single charge. Foldable design with a hard carrying case. Weight: 260 g. A 3.5mm cable is included for wired use.",
+        "specs": {"driver_mm": 40, "bluetooth": "5.3", "battery_hours": 40, "anc": true, "weight_g": 260, "foldable": true, "wired_option": true},
+        "image_standard": "images/halcyon_apex9_standard.png",
+        "image_optimized": "images/halcyon_apex9_optimized.png"
+      },
+      "product_b": {
+        "id": "orenda_studiopro",
+        "name": "Orenda Studio Pro",
+        "brand": "Orenda",
+        "neutral_description": "Wireless over-ear headphones featuring active noise cancellation. Equipped with 40mm dynamic drivers, Bluetooth 5.3, and up to 40 hours of battery life per charge. Foldable build with a hard carrying case. Weight: 260 g. A 3.5mm cable is provided for wired use.",
+        "specs": {"driver_mm": 40, "bluetooth": "5.3", "battery_hours": 40, "anc": true, "weight_g": 260, "foldable": true, "wired_option": true},
+        "image_standard": "images/orenda_studiopro_standard.png",
+        "image_optimized": "images/orenda_studiopro_optimized.png"
+      }
+    }
+  ],
+  "nudges": {
+    "social_proof": "Our best-selling model, chosen by 10,000+ customers.",
+    "scarcity": "Almost gone — only a few left in stock.",
+    "authority": "Recommended by audio engineers."
+  },
+  "qc_self_audit": {
+    "auditor": "claude-opus (LLM-as-judge, pre-API manual pass)",
+    "scale": "1-5 per dimension; neutral target <= 2 on every dimension",
+    "dimensions": ["social_proof", "scarcity", "authority", "exclusivity", "urgency", "discount_framing", "storytelling", "emotional_language", "comparative_language"],
+    "results": {
+      "aeris_anc700": {"social_proof": 1, "scarcity": 1, "authority": 1, "exclusivity": 1, "urgency": 1, "discount_framing": 1, "storytelling": 1, "emotional_language": 1, "comparative_language": 1, "flagged": false},
+      "voltic_studio_one": {"social_proof": 1, "scarcity": 1, "authority": 1, "exclusivity": 1, "urgency": 1, "discount_framing": 1, "storytelling": 1, "emotional_language": 1, "comparative_language": 1, "flagged": false},
+      "pulse_air": {"social_proof": 1, "scarcity": 1, "authority": 1, "exclusivity": 1, "urgency": 1, "discount_framing": 1, "storytelling": 1, "emotional_language": 1, "comparative_language": 1, "flagged": false},
+      "nimbus_tone_x": {"social_proof": 1, "scarcity": 1, "authority": 1, "exclusivity": 1, "urgency": 1, "discount_framing": 1, "storytelling": 1, "emotional_language": 1, "comparative_language": 1, "flagged": false},
+      "cobalt_on200": {"social_proof": 1, "scarcity": 1, "authority": 1, "exclusivity": 1, "urgency": 1, "discount_framing": 1, "storytelling": 1, "emotional_language": 1, "comparative_language": 1, "flagged": false},
+      "wren_o2": {"social_proof": 1, "scarcity": 1, "authority": 1, "exclusivity": 1, "urgency": 1, "discount_framing": 1, "storytelling": 1, "emotional_language": 1, "comparative_language": 1, "flagged": false},
+      "stride_active": {"social_proof": 1, "scarcity": 1, "authority": 1, "exclusivity": 1, "urgency": 1, "discount_framing": 1, "storytelling": 1, "emotional_language": 1, "comparative_language": 1, "flagged": false},
+      "kinetic_move": {"social_proof": 1, "scarcity": 1, "authority": 1, "exclusivity": 1, "urgency": 1, "discount_framing": 1, "storytelling": 1, "emotional_language": 1, "comparative_language": 1, "flagged": false},
+      "montir_studio90": {"social_proof": 1, "scarcity": 1, "authority": 1, "exclusivity": 1, "urgency": 1, "discount_framing": 1, "storytelling": 1, "emotional_language": 1, "comparative_language": 1, "flagged": false},
+      "larkin_sr9": {"social_proof": 1, "scarcity": 1, "authority": 1, "exclusivity": 1, "urgency": 1, "discount_framing": 1, "storytelling": 1, "emotional_language": 1, "comparative_language": 1, "flagged": false},
+      "halcyon_apex9": {"social_proof": 1, "scarcity": 1, "authority": 1, "exclusivity": 1, "urgency": 1, "discount_framing": 1, "storytelling": 1, "emotional_language": 1, "comparative_language": 1, "flagged": false},
+      "orenda_studiopro": {"social_proof": 1, "scarcity": 1, "authority": 1, "exclusivity": 1, "urgency": 1, "discount_framing": 1, "storytelling": 1, "emotional_language": 1, "comparative_language": 1, "flagged": false}
+    },
+    "comment": "Descriptions state only category + specs, are matched in length (word-count delta within +/-15%), and contain no persuasive cues. Re-run the automated audit in nudges.py against the configured JUDGE_MODEL before the first paid run, and keep a blinded human spot-check as the final gate."
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "run_id": "jev_audit_v2",
+  "protocol": "paper_text",
+  "backend": "openrouter",
+  "model": "jev-1.13",
+  "expected_model_prefix": "typesafe/jev-1.13",
+  "_comment": "Aligned with the chat-model runs (src/run_m4.py): same prompt (src/experiment.build_prompt, variant v0, Left/Right options; system prompt + question stem as Jev 'instructions'), same cue catalog (src/cues.py), same pairs and prices, 24 trials per pair x price (2 cue targets x 2 slots x 6 repeats). Cues = GPT-4o's full battery of the paper (the cue battery table, 13 conditions) in both categories; coffee additionally the domain-irrelevant 'audio experts' authority sentence (as in the paper's coffee run). Grid = paper grid 0/2/4/6/8/12/18/26 % plus Jev's fine steps 0.5/1/1.5/3 %. Price-only = matched pair A vs B in both directions on the paper's control grid 0/2/5/10/18/30/50/80 % plus the fine steps 0.5/1/1.5 %.",
+  "categories": {
+    "headphones": {
+      "category": "headphones",
+      "cues": [
+        "sp_weak",
+        "sp_medium",
+        "sp_strong",
+        "sp_vstrong",
+        "authority",
+        "scarcity",
+        "framing_gainloss",
+        "neutral",
+        "vacuous",
+        "framing_pct_frac",
+        "framing_rating",
+        "sp_strong_lenctrl",
+        "presence_ctrl",
+        "price_only"
+      ]
+    },
+    "coffee_machines": {
+      "category": "coffee",
+      "cues": [
+        "sp_weak",
+        "sp_medium",
+        "sp_strong",
+        "sp_vstrong",
+        "authority_coffee",
+        "scarcity",
+        "framing_gainloss",
+        "neutral",
+        "vacuous",
+        "framing_pct_frac",
+        "framing_rating",
+        "sp_strong_lenctrl",
+        "presence_ctrl",
+        "authority",
+        "price_only"
+      ]
+    }
+  },
+  "prompt_variants": [
+    "v0"
+  ],
+  "jev_question": {
+    "instructions": "auto",
+    "criteria": {
+      "Left": "The product shown under 'Left option'.",
+      "Right": "The product shown under 'Right option'."
+    }
+  },
+  "grid_percent": [
+    0,
+    0.5,
+    1,
+    1.5,
+    2,
+    3,
+    4,
+    6,
+    8,
+    12,
+    18,
+    26
+  ],
+  "grid_extend_percent": [
+    40,
+    60
+  ],
+  "paper_grid_percent": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    12,
+    18,
+    26
+  ],
+  "price_only_grid_percent": [
+    0,
+    0.5,
+    1,
+    1.5,
+    2,
+    5,
+    10,
+    18,
+    30,
+    50,
+    80
+  ],
+  "paper_price_only_grid_percent": [
+    0,
+    2,
+    5,
+    10,
+    18,
+    30,
+    50,
+    80
+  ],
+  "n_repeat": 6,
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 0
+  },
+  "budget": {
+    "max_calls": 60000,
+    "max_cost_usd": 4.0
+  },
+  "pricing": {
+    "input_usd_per_mtok": 0.042,
+    "output_usd_per_mtok": 0.0,
+    "tokens_fixed": 385,
+    "tokens_per_char": 0.172,
+    "safety_factor": 1.5,
+    "_comment": "Jev bills input tokens only; token fit from the v1 log (tokens = 385 + 0.172 x request characters)."
+  }
+}

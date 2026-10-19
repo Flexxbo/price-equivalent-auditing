@@ -1,0 +1,30 @@
+{
+  "run_id": "jev_audit_v1",
+  "backend": "openrouter",
+  "model": "jev-1.13",
+  "expected_model_prefix": "typesafe/jev-1.13",
+  "categories": {
+    "headphones": {
+      "pairs_file": "data/products/headphones_pairs.json",
+      "authority": "Recommended by audio experts."
+    },
+    "coffee_machines": {
+      "pairs_file": "data/products/coffee_machines_pairs.json",
+      "authority": "Recommended by coffee experts."
+    }
+  },
+  "cues": {
+    "sp_strong": {"treat": "Our best-selling model, chosen by over 10,000 customers."},
+    "authority": {"treat": "__AUTHORITY_PER_CATEGORY__"},
+    "scarcity": {"treat": "Only a few left in stock."},
+    "neutral": {"treat": "Each unit has a printed serial number on the housing."},
+    "framing_gainloss": {"treat": "9 out of 10 buyers keep it.", "ctrl": "1 out of 10 buyers returns it."},
+    "framing_pct_frac": {"treat": "Chosen by 25% of shoppers.", "ctrl": "Chosen by 1 in 4 shoppers."}
+  },
+  "grid_percent": [0, 0.5, 1, 1.5, 2, 3, 4, 6, 8, 12, 18, 26],
+  "grid_extend_percent": [40, 60],
+  "n_repeat": 3,
+  "bootstrap": {"resamples": 2000, "seed": 0},
+  "budget": {"max_calls": 20000, "max_cost_usd": 3.0},
+  "controls": {"price_only": true, "position": true}
+}

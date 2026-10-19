@@ -1,0 +1,11 @@
+openai>=1.30.0
+boto3>=1.34          # Amazon Bedrock (Claude, Nova, Llama)
+python-dotenv>=1.0.0
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+matplotlib>=3.7
+tqdm>=4.66
+# image (presentation) cue only; after installing run once: python -m playwright install chromium
+pillow>=10.0
+playwright>=1.44

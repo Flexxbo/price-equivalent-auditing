@@ -1,0 +1,102 @@
+{
+  "run_id": "jev_audit_v2_e1",
+  "protocol": "paper_text",
+  "backend": "openrouter",
+  "model": "jev-1.13",
+  "expected_model_prefix": "typesafe/jev-1.13",
+  "_comment": "Prompt-paraphrase robustness exactly like GPT-4o's E1 run (src/run_robustness.py): headphones, the six E1 cues, task phrasings v0-v3 (src/experiment.PROMPT_VARIANTS), 12 trials per pair x price (2 cue targets x 2 slots x 3 repeats). Grid as the main v2 run.",
+  "categories": {
+    "headphones": {
+      "category": "headphones",
+      "cues": [
+        "neutral",
+        "sp_weak",
+        "sp_medium",
+        "sp_strong",
+        "sp_vstrong",
+        "framing_gainloss"
+      ]
+    }
+  },
+  "prompt_variants": [
+    "v0",
+    "v1",
+    "v2",
+    "v3"
+  ],
+  "jev_question": {
+    "instructions": "auto",
+    "criteria": {
+      "Left": "The product shown under 'Left option'.",
+      "Right": "The product shown under 'Right option'."
+    }
+  },
+  "grid_percent": [
+    0,
+    0.5,
+    1,
+    1.5,
+    2,
+    3,
+    4,
+    6,
+    8,
+    12,
+    18,
+    26
+  ],
+  "grid_extend_percent": [
+    40,
+    60
+  ],
+  "paper_grid_percent": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    12,
+    18,
+    26
+  ],
+  "price_only_grid_percent": [
+    0,
+    0.5,
+    1,
+    1.5,
+    2,
+    5,
+    10,
+    18,
+    30,
+    50,
+    80
+  ],
+  "paper_price_only_grid_percent": [
+    0,
+    2,
+    5,
+    10,
+    18,
+    30,
+    50,
+    80
+  ],
+  "n_repeat": 3,
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 0
+  },
+  "budget": {
+    "max_calls": 25000,
+    "max_cost_usd": 2.0
+  },
+  "pricing": {
+    "input_usd_per_mtok": 0.042,
+    "output_usd_per_mtok": 0.0,
+    "tokens_fixed": 385,
+    "tokens_per_char": 0.172,
+    "safety_factor": 1.5,
+    "_comment": "Jev bills input tokens only; token fit from the v1 log (tokens = 385 + 0.172 x request characters)."
+  }
+}

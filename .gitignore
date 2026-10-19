@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+data/results/
+data/images/
+jev/_out/
+figures/
+generated/
